@@ -11,8 +11,8 @@ import { Config } from './src/types/config';
 // Use an editor with Typescript support to get autocomplete and validity checking!
 export const config: Config = {
   // General
-  name: 'John',
-  openInNewTab: true,
+  name: 'Costeer',
+  openInNewTab: false,
   title: 'Bento',
 
   // Clock
@@ -28,7 +28,7 @@ export const config: Config = {
   },
 
   // Theme
-  theme: 'bento',
+  theme: 'catppuccin-mocha',
 
   // Place a background image in ./src/assets/images/ and provide the file name.
   // Alternatively, provide a URL to an image. If the page is served over https, you may have issues loading images from insecure origins.
@@ -50,7 +50,7 @@ export const config: Config = {
 
   // Search Bar
   searchBar: true,
-  searchEngine: 'google', // google, ddg
+  searchEngine: 'ddg', // google, ddg
   barPlaceholder: '', // if blank, use search engine name. Set to ' ' for no placeholder.
   autoFocusBar: true,
 
@@ -69,7 +69,7 @@ export const config: Config = {
   weatherUnit: 'C', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
 
-  trackLocation: true, // Request location from the browser. If false, or location is denied, use the coordinates below.
+  trackLocation: false, // Request location from the browser. If false, or location is denied, use the coordinates below.
   defaultLatitude: '37.775',
   defaultLongitude: '-122.419',
 
@@ -78,7 +78,7 @@ export const config: Config = {
   // "location" - Switches based on local sunrise/sunset (requires OpenWeatherMap API key)
   // "preset" - Switches based on set hours
   // "none" - No automatic switching
-  autoTheme: 'system',
+  autoTheme: 'none',
 
   // If autoTheme is set to "preset", set the hours below.
   darkModeOnTime: '18:30',
@@ -91,9 +91,9 @@ export const config: Config = {
     searchBar: true,
     themeButton: true,
     clock: true,
-    greeter: true,
+    greeter: false,
     date: true,
-    weather: true,
+    weather: false,
   },
 
   // Buttons
@@ -109,17 +109,17 @@ export const config: Config = {
       {
         name: 'Mail',
         icon: 'envelope',
-        url: 'https://mail.protonmail.com/',
+        url: 'https://account.proton.me/switch',
       },
       {
-        name: 'Todoist',
-        icon: 'list-ol',
-        url: 'https://todoist.com',
+        name: 'Aniworld',
+        icon: 'play-circle',
+        url: 'https://aniworld.to/',
       },
       {
-        name: 'Calendar',
-        icon: 'calendar',
-        url: 'https://calendar.google.com/calendar/r',
+        name: 'ProtonDB',
+        icon: 'atom',
+        url: 'https://www.protondb.com/',
       },
       {
         name: 'Reddit',
@@ -127,9 +127,9 @@ export const config: Config = {
         url: 'https://reddit.com',
       },
       {
-        name: 'Odysee',
+        name: 'Youtube',
         icon: 'fab-youtube',
-        url: 'https://odysee.com/',
+        url: 'https://www.youtube.com/',
       },
     ],
     // Second buttons group
@@ -174,44 +174,48 @@ export const config: Config = {
     // If you're using the 'bento' layout, this is the only group that will be used.
     [
       {
-        icon: 'music', // Icon for the list to use. The same as the buttons.
+        icon: 'code', // Icon for the list to use. The same as the buttons.
         links: [
           {
-            name: 'Inspirational', // Display text for the link
-            url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // URL to the page
+            name: 'Github', // Display text for the link
+            url: 'https://github.com/Costeer/', // URL to the page
           },
           {
-            name: 'Classic',
-            url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            name: 'Nexus',
+            url: 'https://www.nexusmods.com/',
           },
           {
-            name: 'Oldies',
-            url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            name: 'HackTrichs',
+            url: 'https://book.hacktricks.xyz/',
           },
           {
-            name: 'Rock',
-            url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            name: 'PackageSearch',
+            url: 'https://search.nixos.org/packages',
+          },
+          {
+            name: 'HomeManager',
+            url: 'https://homeFeb 11-manager-options.extranix.com/',
           },
         ],
       },
       {
-        icon: 'coffee',
+        icon: 'cube',
         links: [
           {
-            name: 'Linkedin',
-            url: 'https://www.linkedin.com',
+            name: 'Happy Hues',
+            url: 'https://www.happyhues.co/',
           },
           {
-            name: 'Dribbble',
-            url: 'https://www.dribbble.com',
+            name: 'Image Tools',
+            url: 'https://quickpic.t3.gg/',
           },
           {
-            name: 'Trello',
-            url: 'https://www.trello.com',
+            name: 'Terminal.sexy',
+            url: 'https://terminal.sexy/',
           },
           {
-            name: 'Slack',
-            url: 'https://www.slack.com',
+            name: 'Image Enlarger',
+            url: 'https://bigjpg.com/en',
           },
         ],
       },
